@@ -1,0 +1,224 @@
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   font-family: 'Montserrat', sans-serif;
+ }
+
+body{
+  height: 95%;
+  width: 100%;
+  }
+
+
+
+.encabezado {
+  background-image: url(https://img.freepik.com/vector-premium/diseno-encabezado-o-banner-sitio-web-fondo-geometrico-abstracto-puntos-lineas-conexion_302149-131.jpg?w=996);
+  background-repeat: repeat;
+  font-size: 25px ;
+  color: white;
+  border-bottom: dashed;
+   }
+
+   .nombre {
+   padding: 0.7em 0em;
+   font-size: 2em ;
+   color: withe;
+   text-align: center;
+   }
+
+   .puesto {
+   text-align: center;
+   padding-bottom: 1em;
+   }
+
+
+.lateral {
+  background: #021244;
+  width: 20%;
+  height: 50em;
+  float: left;
+}
+  
+  .foto{
+    margin: 1.5em 0em 0em 1.5em;
+    padding: 3em;
+    height: 3em; 
+    width: 3em;
+    background-image: url(https://ejemplos-curriculum.com/wp-content/uploads/2021/03/foto_curriculum-scaled.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;  
+   }  
+
+
+   .acerca_titulo{
+   font-size: 15px; 
+   text-align: center;
+   padding: 3em; 
+   color: white;
+   }
+
+   .acerca_texto{
+   padding: 0em 2em 1em 2em;
+   font-size: 12px ;
+   text-align: justify;
+   color: white;
+   }
+
+   
+  .nav{
+    padding: 1em;
+  } 
+
+   .navli {
+   padding: 1em;
+   color: lightblue;
+   transition: all .5s ease;
+   list-style:none;
+   }
+
+   .navli:hover > a {
+   color: blue;
+   cursor: pointer;
+   }
+
+   :hover > h2 {
+   color: blue;
+   cursor: pointer;
+   }
+   .navli:hover {
+   color: blue;
+   }
+
+   .navli a{
+   color: lightblue;
+   text-decoration: none;
+   padding-left: 0.8em;
+   }
+
+   .navli.activo{
+    background-color: #217EF6;
+    } 
+
+
+.infos{
+  width: 80%;
+  height: 50em;
+  background: lightblue;
+  float: right;
+  }
+
+    article div {
+      padding: 5em 10em 0em 5em;
+      position: top;
+      position: relative;
+    }
+
+     article div h3 {
+     padding: 5em 10em 0em 5em;
+     padding: 2em;        
+    }
+
+    article div li{
+      padding: 1em;
+    }
+   
+    article .bloque{
+      min-width: 10vh;
+      position: absolute;
+      opacity: 0;
+      transition: all .5s ease;
+    }
+
+    article .bloque.activo{
+      min-width: 10vh;
+      position: absolute;
+      opacity: 1
+    }
+
+  .campo{
+    font-weight: bold;
+   }
+
+  #inicio p{
+    text-align: center;
+    padding: 0.5em;
+
+   } 
+
+  
+
+footer {
+  height: 3em;
+  padding: 1em; 
+  }
+
+   footer h4{
+    display: inline;
+    margin-top: 10em;
+    height: 4em;
+    width: 100%;
+    padding: 10em 2em 1em 2em;
+    }
+
+   footer ul{
+    height: 3em;
+   }
+
+   footer ul li {
+    display: inline;
+    height: 2em;
+    margin-top: 5em;
+    padding: 1em;
+   }
+
+
+
+
+/** Adaptaciones responsive*/
+
+@media only screen and (max-width: 650px){
+   .nombre {
+      text-align: right;
+   }
+   .puesto{
+    text-align: right;
+   }
+
+
+   .lateral {
+   background: #021244;
+   width: 20%;
+   height: 120em;
+   float: left;
+   font-size: 8px;
+   }
+
+   .infos{
+    width: 80%;
+   height: 60em;
+   background: lightblue;
+   float: right;
+    }
+
+@media only screen and (max-width: 570px){
+
+.acerca_titulo{
+   font-size: 10px; 
+   }
+
+   .acerca_texto{
+   font-size: 8px;
+   }
+
+     .campo{
+   font-size: 10px;
+   }
+
+  .inicio p{
+    font-size: 8px;
+   } 
+}
+
+
